@@ -107,7 +107,7 @@ h1{
     z-index: 1;
     
 }
-#menu{
+#menub{
     width: 0px;
     height:0px;
     font-size: 30px;
@@ -123,15 +123,14 @@ h1{
     margin-left: 975px; 
    
 }
-#menub{
+menu{
     /* border: 1px solid red; */
-    margin-top: 649px;
-    
+    margin-top: 649px;    
     padding: 30px 5px 5px 20px;
     margin-top: px;
     
 }
-#menub li{
+menu li{
     padding: 67px 60px 60px 60px;
     /* border: 1px solid red; */
     background-color:  #22806b; 
@@ -140,7 +139,7 @@ h1{
    float: left;
    
 }
-#menub a{
+menu a{
     text-decoration: none;
     margin-left: 40px;
     font-size: 40px;
@@ -155,13 +154,13 @@ h1{
     list-style-type: none;
     
 }
-#menub ul{
+menu ul{
     width: 340px;
     margin-top: -10px;
     margin-left: 160px;
     
 }
-#menub  a{
+menu  a{
     /* background-color:;  */
     width: px;
     padding: 0px;
@@ -185,8 +184,8 @@ h1{
 #pag1 h2{
     margin: 30px;
     font-family: "Bree Serif", serif;
-    font-weight: 900;
-    font-style:bold;
+    font-weight: 400;
+    font-style:normal;
     font-size: 35px;
     margin-left: 280px;
     margin-bottom: 50px;
@@ -289,7 +288,7 @@ h1{
 #pag3b h2{
     margin:5px;
     font-family: "Bree Serif", serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-size: 35px;
     margin-left: 280px;
@@ -432,33 +431,33 @@ h1{
 @media screen and (max-width:768px) {
 #capa{
     width: auto;
-    height: 1024px;
+    height: auto;
+    padding: 261px 0px;
 }
 h1{
     font-size: 47px;
     text-align: center;
     align-items: center;
-    margin-top: 450px;
+    margin-top: 0px;
 }
 #apresentacao{
     width: auto;
-    height: 1024px;
+    height: auto;
 }
 #apresentacao h2{
     font-size: 30px;
 }
 #apresentacao p{
     font-size: 20px;
-    width: 705px;
+    height: auto;
+    width: 340px;
 }
-#apresent a{
-    
-}
+
 #bonecocumprimenta img{
-    width: 300px;
-    height: 320px;
-    margin-left: 203px;
-    margin-top: 123px;
+    width: 139px;
+    height: auto;
+    margin-left: 324px;
+    margin-top: -160px;
     position: absolute;
     
 }
@@ -497,8 +496,19 @@ h1{
     /* -webkit-text-stroke-color: ; */
     padding-left: 0px;
 }
+#burguer{
+   display: block;
+   background-color: #228061;
+   padding: 5px;
+   text-align: center;
+    cursor: pointer;
+}
+#burguer:hover{
+    background-color: #ed7615;
+    color: #F2F2F2;
 
-#menu{
+}
+#menub{
     width: auto;
     height:auto;
     font-size: 30px;
@@ -506,15 +516,16 @@ h1{
     font-weight: 900;
     font-style: normal;
     text-align: left;    
-    display: flex;
+    display: none;
     text-align: left;
     align-items: center;
     position: relative;
-    margin-top: 30px;
-    margin-left: 975px; 
+    margin-top: -214px;
+    margin-left: 795px; 
    
 }
-#menub{
+
+menu{
     /* border: 1px solid red; */
     margin-top: 649px;
     
@@ -522,7 +533,8 @@ h1{
     margin-top: px;
     
 }
-#menub li{
+
+menu li{
     padding: 67px 60px 60px 60px;
     /* border: 1px solid red; */
     background-color:  #22806b; 
@@ -531,7 +543,7 @@ h1{
    float: left;
    
 }
-#menub a{
+menu a{
     text-decoration: none;
     margin-left: 40px;
     font-size: 40px;
@@ -546,30 +558,24 @@ h1{
     list-style-type: none;
     
 }
-#menub ul{
+menu ul{
     
     margin-top: -469px;
     margin-left: -789px;
     
 }
-#menub  a{
-    
-    width: px;
-    padding: 0px;
-    
-    
-}
+
 #pag1{
     width: auto;
-    height: 1024px;
+    height: 650px;
 }
 #pag1 h2{
     margin: 30px;
     font-family: "Bree Serif", serif;
     font-weight: 900;
     font-style:bold;
-    font-size: 35px;
-    margin-left: 280px;
+    font-size: 30px;
+    margin-left: 0px;
     margin-bottom: 50px;
     /* color:; */
     
@@ -578,12 +584,12 @@ h1{
     background-image: url(../img/cristianonovo.jpg);
     width: px;
     height: 180px;
-    margin-top: 0px;
+    margin-top: -31px;
     /* position:; */
     border-radius: 15px 15px 15px 15px;
     border: 1px solid #ed7615;
 }
-#meufoguete{
+meufoguete{
     background-image: url(../img/foguetenovo.png);
     width:300px;
     height: 300px;
@@ -596,11 +602,12 @@ h1{
     padding: 5px;
     float: left;
     width: auto;
-    height: 1024px;
+    height: auto;
     justify-content: space-between;
-    margin-left:270px;
+    margin-left:0px;
+    margin-top: 150px;
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Bree Serif", serif;
     font-weight: 500;
     font-style:normal;
@@ -634,12 +641,13 @@ h1{
     color: #22806b;
 }
 #pag3{
-    width: 1100px;
+    width: auto;
     height: 650px;
     margin: 5px 5px 5px 5px;
     padding: 20px;    
     margin-left: auto; 
     margin-top: 50px;
+    width: auto;
 }
 #pag3b{
     margin: 10px;
@@ -655,7 +663,6 @@ h1{
 #pag3 p{
     padding: 5px;
     float: left;
-    width: 764px;
     justify-content: space-between;
     text-align: justify;
     font-size: 20px;
@@ -671,7 +678,7 @@ h1{
     font-weight: 600;
     font-style: normal;
     font-size: 35px;
-    margin-left: 280px;
+    margin-left: 20px;
     margin-top: 50px;
     text-transform: capitalize;
     color: #ed7615;
@@ -689,15 +696,15 @@ h1{
 }
 #pag3b img{
     position: absolute;
-    width: 141px;
+    width: 100px;
     margin-top: 431px
 }
 #pag4{
-    width: 1450px;
+    width: auto;
     height: 650px;
     margin: 50px 5px 5px 5px;
     padding: 20px;
-   
+   border-radius: 15px 15px 15px 15px;
 }
 #pag4 h2{
     margin: 5px;
@@ -705,7 +712,7 @@ h1{
     font-weight: 400;
     font-style: normal;
     font-size: 35px;
-    margin-left: 280px;
+    margin-left: 0px;
     margin-bottom: 100px;
     text-transform: capitalize;
 }
