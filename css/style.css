@@ -615,9 +615,9 @@ meufoguete{
 }
 #pag2{
     width: auto;
-    height: 1024px;
+    height: 650px;
     padding: 20px;
-    background-image:url(../img/quebra-cabecasmobiles.jpg);
+    background-image:url(../img/img2/quebra-cabeca-small.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
