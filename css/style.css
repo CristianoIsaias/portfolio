@@ -496,17 +496,17 @@ h1{
     /* -webkit-text-stroke-color: ; */
     padding-left: 0px;
 }
-#burguer{
+.burguer{
    display: block;
    background-color: #228061;
    padding: 5px;
    text-align: center;
     cursor: pointer;
 }
-#burguer:hover{
+.burguer:hover{
     background-color: #ed7615;
     color: #F2F2F2;
-
+    cursor: pointer;
 }
 #menub{
     width: auto;
@@ -516,7 +516,7 @@ h1{
     font-weight: 900;
     font-style: normal;
     text-align: left;    
-    display: none;
+    display: flex;
     text-align: left;
     align-items: center;
     position: relative;
