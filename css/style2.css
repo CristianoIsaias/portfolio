@@ -1,0 +1,113 @@
+*{margin: 0;padding: 0;}
+
+.capa{
+    width: 1520px;
+    height: 700px;    
+    background-color:#27024D;
+    display: flex;
+    align-items: center;
+
+}
+.fundo-capa{
+    width: 1300px;
+    height: 550px;
+    background-color: #6C01BF;
+    border: 1px solid #C115A3;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 9px 9px 9px black;
+    position: relative;
+    background: linear-gradient(135deg, #2d0052, #a100ff);
+    
+}
+.fundo-capa h6{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 20px;
+    /* font-family:'Courier New', Courier, monospace; */
+
+}
+.fundo-capa h1{
+    color: white;
+    font-size: 45px;   
+    margin: 20px;    
+    position: absolute;
+    top:200px;
+    right: 0px;
+    font-family: seas;
+    font-family: "Cinzel Decorative", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+     font-style: normal;   
+
+}
+.fundo-capa img{
+    position: relative;
+    left: 0px;
+    top: 55px;
+    width: 300px;
+    
+}
+.menu{
+display:flex;
+justify-content: right;
+align-items: center;
+padding: 20px;
+list-style: none;
+}
+.menu-itens{
+    display:inline-block;
+    font-display:fallback;
+    
+}
+
+nav{
+    list-style: none;
+     width: 570px;
+     position: absolute;
+     right: 0px;
+     border-radius: 35px;
+     margin: 10px;
+     background-color: #29008232;
+     border: 1px solid #C115A3;
+}
+nav ul li{
+    display: inline-block;
+    
+}
+nav ul li a{
+     padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+   /* border: 1px solid white; */
+    text-transform: uppercase;
+    font-weight:bold;
+    position: relative;
+    border-radius: 25px;    
+     text-shadow: 1px 0px 0px #6f2d2d;
+    
+}
+nav ul li a:hover{
+    background-color: #C115A3;
+/* }
+.caixa-img{
+    width: 820px;
+    height: 380px;
+    background-color: #C115A3;
+    position: absolute;
+    bottom:0px;
+    right: 0; */
+    /* border-radius: 0px 50px 50px 0px; */
+    /* box-shadow: 9px 9px 9px black;
+    box-sizing:content-box; */
+    /* clip-path: polygon(0% 100%, 20% 0%, 100% 0%, 100% 100%); */
+    
+}
+.caixa-img{
+    background-image: url(../img/programming-background-with-person-working-with-codes-computer\ \(3\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

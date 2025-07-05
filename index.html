@@ -3,23 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" href="css/reset.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style2.css" media="screen" href="css/reset.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <title>Portefólio</title>
   </head>
   <body>
     <!-- Inicio do portfolio a capa -->
-    <div id="capa">
-      <h1><a href="#apresentacao">Do Hardware ao Software – Minha Jornada em transição</a></h1>
+    <div class="capa">
+      
+      <div class="fundo-capa">
+        
+        
+        <div class="menub">
+        <!-- <span id="burguer" class="material-symbols-outlined" 
+        onclick="clickMenu()">menu</span> -->
+
+        
+         
+        <nav>          
+          <ul class="menu">
+          <li><a href="#pag1" onclick="onmouseover"> quem sou</a></li>
+          <li><a href="#pag2"> habilidades</a></li>
+          <li><a href="#pag3b">experiência</a></li>
+          <li><a href="#pag4"> projeto</a></li>
+        </ul>
+      </nav>
+      </div>
+
+      
+
+        <h6>Cristiano Isaias da Silva</h6>
+        <img src="img/informatica.png" alt="">
+        
+        <h1>Caminho do Hardware para o Software</h1>
+      <div class="caixa-img"></div>
+      <div class="caixa-bottom"></div>
+      
+      </div>
+      
     </div>
     <!-- Apresentação a meu respeito -->
-    <div id="apresentacao">
+    <div class="apresentacao">
       <h2>Apresentação</h2>
       <p id="apresent">
         <a href="#indice"
@@ -41,21 +70,7 @@
       <div id="indice-caixa"></div>
       <!-- <div id="teclado"> <img src="img/tecladorecorte.jpg" alt=""></div> -->
       
-      <div id="menub">
-        <!-- <span id="burguer" class="material-symbols-outlined" 
-        onclick="clickMenu()">menu</span> -->
-         
-        <menu id="itens">
-          
-          <ul style="list-style: none;">
-          <li><a href="#pag1"> quem sou?</a></li>
-          <li><a href="#pag2"> habilidades</a></li>
-          <li><a href="#pag3b">experiência</a></li>
-          <li><a href="#pag4"> projeto???</a></li>
-        </ul>
-      </menu>
-      </div>
-    </div>
+          </div>
     <div id="pag1">
        <h2>Quem sou?</h2>
       <p>
@@ -118,19 +133,29 @@
 
         <div class="box">
         <a href="https://grafico-em-progresso.vercel.app/">        
-          <img src="img/oee.jpg" alt="grafico de progress" class="imgGaleria">          
+          <img src="img/oee.jp" alt="grafico de progress" class="imgGaleria">          
         </a>
        </div>
 
        <div class="box">
         <a href="https://arrumameupc.vercel.app/">        
-         <img src="img/arruma.jpg" alt="grafico de progress" class="imgGaleria">          
+         <img src="img/arruma.jp" alt="grafico de progress" class="imgGaleria">          
          </a>
         </div>
         
       </section>
     </main>
     </div>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JTKKMXN596"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JTKKMXN596');
+</script>
 
     <script src="js/script.js">
       

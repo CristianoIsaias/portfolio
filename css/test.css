@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.fundo-capa {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #2a004f, #a100ff);
+  overflow: hidden;
+}
+
+/* Curva usando clip-path */
+.fundo-capa::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, #7e00c5, transparent);
+  clip-path: ellipse(90% 70% at 70% 30%);
+  z-index: 0;
+}
+
+/* Linhas curvas */
+.fundo-capa::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+  transform: rotate(-20deg);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* Elementos decorativos */
+.plus, .circle {
+  position: absolute;
+  color: #f0f;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #f0f;
+  border-radius: 50%;
+}

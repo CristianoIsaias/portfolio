@@ -1,3 +1,4 @@
+
 *{margin: 0px;padding: 0px;}
 
 body {
@@ -10,7 +11,7 @@ h1{
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 70px;    
+    font-size: 40px;    
     text-align: center;
     color: #ed7615;
     
@@ -22,6 +23,7 @@ h1{
     color: inherit;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+    text-transform: uppercase;
 }
 #capa {
     background-color: #22806b;
@@ -32,7 +34,7 @@ h1{
     margin: 5px;
 }
 
- #apresentacao{
+ .apresentacao{
     border-radius: 10px 10px 10px 10px;
     width: auto;
     height: 650px;
