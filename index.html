@@ -10,7 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style2.css" media="screen" href="css/reset.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <title>Portefólio</title>
+    <title>Portefolio</title>
   </head>
   <body>
     <!-- Inicio do portfolio a capa -->
@@ -29,19 +29,18 @@
           <ul class="menu">
           <li><a href="#pag1" onclick="onmouseover"> quem sou</a></li>
           <li><a href="#pag2"> habilidades</a></li>
-          <li><a href="#pag3b">experiência</a></li>
-          <li><a href="#pag4"> projeto</a></li>
+          <li><a href="#pag3">experiência</a></li>
+          <li><a href="#pag4"> projetos</a></li>
         </ul>
       </nav>
       </div>
-
-      
-
         <h6>Cristiano Isaias da Silva</h6>
+         <h1>Portfolio</h1>
+        <h2>Do Suporte ao Desenvolvimento de Software</h2>
+     
         <img src="img/informatica.png" alt="">
         
-        <h1>Caminho do Hardware para o Software</h1>
-      <div class="caixa-img"></div>
+        <div class="caixa-img"></div>
       <div class="caixa-bottom"></div>
       
       </div>
@@ -49,59 +48,92 @@
     </div>
     <!-- Apresentação a meu respeito -->
     <div class="apresentacao">
-      <h2>Apresentação</h2>
-      <p id="apresent">
-        <a href="#indice"
-          >Olá, meu nome é Cristiano Isaias da Silva, tenho 45 anos, sou casado
-          e pai de dois filhos. Sou uma pessoa de princípios, guiado pela fé e
-          pelos valores do evangelho, o que reflete na minha conduta pessoal e
-          profissional.</a
-        >
-      </p>
+      <!-- <h2>Apresentação</h2> -->
+      <div class="minhafoto"></div>
+        <p><span>Olá</span>, meu nome é Cristiano Isaias da Silva, tenho <span id="idade" style="font-size: 20px;"></span> 
+          anos, sou casado e pai de dois filhos. Sou uma pessoa de princípios, cristãos guiado pela fé e
+          pelos valores do evangelho, o que reflete na minha conduta pessoal e profissional.</p>
+      
       <div id="bonecocumprimenta">
-        <img src="img/cumprimento-removebg-preview.png" alt="Avatar se cumprimentando">
+        <!-- <img src="img/cumprimento-removebg-preview.png" alt="Avatar se cumprimentando"> -->
       </div>
     </div>
+
+    <script>
+
+      function atualizarIdade(dataNascimento) {
+    const hoje = new Date();
+    const nascimento = new Date(dataNascimento);
+
+    let idade = hoje.getFullYear() - nascimento.getFullYear();
+    const mes = hoje.getMonth() - nascimento.getMonth();
+
+    if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+      idade--;
+    }
+
+    document.getElementById("idade").textContent = idade;
+  }
+
+  // 👇 coloque sua data de nascimento aqui (formato: 'YYYY-MM-DD')
+  atualizarIdade('1979-06-14');
+
+    </script>
       
-    <div id="indice0">
+    <!-- <div id="indice0">
       
       <div id="indice"><h2>Indice</h2></div>
       
       <div id="indice-caixa"></div>
-      <!-- <div id="teclado"> <img src="img/tecladorecorte.jpg" alt=""></div> -->
+       <div id="teclado"> <img src="img/tecladorecorte.jpg" alt=""></div> -->
       
-          </div>
+          <!-- </div>  -->
     <div id="pag1">
-       <h2>Quem sou?</h2>
+       
       <p>
-        Sou um profissional com 14 anos de experiência em TI, tendo atuado em
-        diversas funções ao longo da minha carreira, desde Auxiliar Técnico de
-        Informática até Especialista de Suporte de Campo. Durante essa
-        trajetória, desenvolvi um sólido conhecimento em suporte técnico, redes,
-        hardware, sistemas ERP (TOTVS e SAP), monitoramento (Zabbix) e
-        infraestrutura de TI. Nos últimos anos, venho direcionando minha
-        carreira para a área de desenvolvimento de software, aplicando minha
-        experiência técnica em HTML, CSS, JavaScript, PHP e bancos de dados para
-        criar soluções eficientes e escaláveis.
+        <span>S</span>ou um profissional com mais de uma década de experiência em TI, tendo atuado em 
+        diversas funções na área ao longo da minha carreira — desde estagiário até especialista de suporte 
+        em campo. Durante essa trajetória, desenvolvi um sólido conhecimento em suporte técnico, redes, 
+        hardware, sistemas ERP (TOTVS e SAP), monitoramento (Zabbix) e infraestrutura de TI.
+        Ao longo do tempo, desempenhei essas funções em diferentes níveis de profundidade — algumas por mais
+        tempo, outras por menos — sempre me adaptando às necessidades de cada cenário.
+        Nos últimos anos, venho direcionando minha carreira para áreas que considero estratégicas 
+        neste momento, como desenvolvimento de software e análise de dados. Para isso, busco constantemente 
+        me capacitar por meio de cursos que me fornecem base técnica e confiança para assumir novos desafios 
+        e responsabilidades nessas áreas.
+        <!-- aproveitando para fazer uso das minhas
+        experiências técnica em HTML, CSS, JavaScript, PHP e bancos de dados para
+        criar soluções eficientes e escaláveis. -->
       </p>
-      <div id="minhafoto"></div>
+      <div class="carrossel">
+        <button class="anterior" onclick="mudarSlide(-1)"><</button>
+          <div class="slides">
+            <img src="img/hardware.jpg" alt="imagem de Hardware">
+            <img src="img/software.jpg" alt="imagem de software">
+            <img src="img/redes.jpg" alt="imagem de redes">
+            <img src="img/infraestrura.jpg" alt="imagem de infraestrura">
+            <img src="img/hardware.jpg" alt="loop da primeira imagem">
+          </div>
+          <button class="proximo" onclick="mudarSlide(-1)">></button>
+      </div>
       <div id="meufoguete"></div>
     </div>
 
-    <div id="pag2">
-      <h2>habilidades</h2>
+     <div id="pag2">
+      <!-- <h2>habilidades</h2> -->
       <p>
-        Estou em constante aprendizado, expandindo minhas habilidades em
-        desenvolvimento web, cloud computing e DevOps, além de me aprofundar em
-        PHP, React e Java, tecnologias que me permitirão construir sistemas
-        ainda mais robustos e inovadores. Meu objetivo é consolidar minha
-        transição para a área de desenvolvimento, unindo minha experiência em TI
-        à criação de soluções modernas e eficientes.
+        <span>T</span>enho o hábito de sempre que possível, estudar diferentes áreas da Tecnologia da 
+        Informação com o objetivo de expandir minhas habilidades. Como exemplo, conquistei recentemente 
+        certificações como o curso de Analista de Dados para Data Science pelo Senai e a certificação do 
+        Google Analytics. Além disso, venho me aprofundando em desenvolvimento web, computação em nuvem 
+        (cloud computing) e DevOps, assim como em tecnologias como PHP, React e Java, que contribuem 
+        diretamente para o enriquecimento dos meus conhecimentos e práticas profissionais.
       </p>
+      <div class="container-pag2">
+        <!-- <img src="img/computer-screens-running-programming-code-empty-software-developing-agency-office-computers-parsing-data-algorithms-background-neural-network-servers-cloud-computing-data-room.jpg" alt=""> -->
+      </div>
     </div>
-    <div id="pag3b">
-      <h2>experiência</h2>
-       <img src="img/boneco-removebg-preview.png" alt="boneco de binóculo">
+    
         <div id="pag3">
       <h3 style="color: #a89f1d;">Empresa: HCL Tech.</h3>
       <p>Função: Especialista de Suporte de Campo 02/2023 – 09/2023.</p>
