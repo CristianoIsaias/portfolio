@@ -20,6 +20,7 @@
     background: linear-gradient(135deg, #2d0052, #a100ff);
     
 }
+
 .fundo-capa h6{
     color: white;
     font-size: 25px;
@@ -51,7 +52,7 @@
 
 }
 .fundo-capa h2{
-    color: white;
+    
     font-size: 33px; 
     display: flex;    
     font-family: "Cinzel Decorative", serif;
@@ -60,8 +61,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /* width: 1300px; */
-    /* text-align: center; */
+    
+}
+.fundo-capa a{
+    text-decoration:none;
+    color: white;
 }
 .fundo-capa img{
     position: relative;
@@ -133,23 +137,23 @@ nav ul li a:hover{
     background-repeat: no-repeat;
 
 }
-.apresentacao{
+#apresentacao{
     border: 1px solid #c8bdce;
     height: 470px;
     padding: 110px;
-    background-color: #A48AA0;
+    background-color: #9700F0;
     width: auto;
 }
-.apresentacao p{
+#apresentacao p{
     font-family: "Cinzel Decorative", serif;
      font-size: 25px;
-     width: 870px;
+     width: 920px;
      text-align: justify;
      line-height: 1.8;
      position: relative;
      top:0px;
      left:430px;
-     
+     color: #fff;
 }
 .minhafoto{
     width: 400px;
@@ -233,7 +237,7 @@ span{
 #pag2{
     width: auto;
     height: 470px;
-    background-color: #a48aa0;
+    background-color: #9700F0;
     padding: 110px;
 }
 #pag2 p{
@@ -291,3 +295,369 @@ span{
     line-height: 1.8;
     text-align: justify;
 }
+/* Criando a responsabilidade -----------------------------------------------------------------------*/
+@media screen and (max-width:768px) {
+
+.capa{
+    width: 100%;
+    max-width: 768px;
+    /* height: 700px;     */
+    background-color:#27024D;
+    display: flex;
+    align-items: center;
+
+}
+.fundo-capa{
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 80px;
+    height: 550px;
+    background-color: #6C01BF;
+    border: 1px solid #C115A3;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 9px 9px 9px black;
+    position: relative;
+    background: linear-gradient(135deg, #2d0052, #a100ff);
+    
+}
+
+.fundo-capa h6{
+    color: white;
+    font-size: 25px;
+    /* text-transform: uppercase; */
+    margin: 20px;
+    font-family: Amsterdam;
+    visibility:hidden;
+
+}
+@font-face {
+    font-family:Amsterdam;
+    src: url(../css/fontes/amsterdam_4/Amsterdam.ttf);
+}
+.fundo-capa h1{
+    color: white;
+    font-size: 25px; 
+    display: flex;    
+    /* text-align: center; */
+    font-family: "Cinzel Decorative", serif;
+    float: left;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.fundo-capa h2{
+    color: white;
+    font-size: 25px; 
+    display: flex;    
+    font-family: "Cinzel Decorative", serif;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    text-align: center;
+}
+.fundo-capa img{
+    position: absolute;
+    /* left: 35%; */
+    top: 60%;
+    width: 100px;
+    float:left;
+    bottom: 40%;
+    left: 38%;
+    
+}
+.menu{
+display:flex;
+justify-content: right;
+align-items: center;
+padding: 20px;
+list-style: none;
+}
+.menu-itens{
+    display:inline-block;
+    font-display:fallback;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.menub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #530095;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 1px solid #B700A8;
+  /* border-radius: 15px; */
+  
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f0c040;
+}
+
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  
+nav{
+    list-style: none;
+     width: 571px;
+     position: absolute;
+     right: 0px;
+     border-radius: 35px;
+     margin: 10px;
+     background-color: #29008232;
+     border: 1px solid #C115A3;
+     visibility: hidden;
+}
+nav ul li{
+    display: inline-block;
+    
+}
+nav ul li a{
+     padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+   /* border: 1px solid white; */
+    text-transform: uppercase;
+    font-weight:bold;
+    position: relative;
+    border-radius: 25px;    
+     text-shadow: 1px 0px 0px #6f2d2d;
+    
+}
+nav ul li a:hover{
+    background-color: #C115A3;
+ }
+/* __________________________________________________________________________________ */
+ .caixa-img{
+    background-image: url(../img/programming-background-with-person-working-with-codes-computer\ \(3\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+#apresentacao{
+    border: 1px solid #c8bdce;
+    height: 670px;
+    padding: 30px;
+    background-color: #A48AA0;
+    width: auto;
+}
+#apresentacao p{
+    font-family: "Cinzel Decorative", serif;
+     font-size: 18px;
+     width: 400px;
+     text-align: justify;
+     line-height: 1.8;
+     position: relative;
+     top:0px;
+     left:30px;
+     
+}
+.minhafoto{
+    width: 200px;
+    height: 190px;
+    float: left;
+    border: 1px solid black;
+    position:absolute;
+    top:780px;
+    background-image: url(../img/cristianonovo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+#pag1{
+    border: 1px solid #c115A3;
+    height: 665px;
+    padding: 110px;
+    background-color: #c8bdce;
+    
+}
+#pag1 p{
+     font-family: "Cinzel Decorative", serif;
+     font-size: 15px;
+     width: 360px;
+     text-align: justify;
+     line-height: 1.8;
+     position: relative;
+     top:-47px;
+}
+.carrossel {
+  width: 380px;
+  height: 300px;
+  border: 1px solid #a100ff;
+  position: absolute;
+  right: 100px;
+  top: 1500px;
+  overflow: hidden; /* 🔒 Esconde o excesso das imagens */
+/* background-color: #29008232; */
+border-radius: 15px;
+}
+
+span{
+    font-size: 36px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 850px; /* maior que o container */
+  height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0 auto; /* 👈 Centraliza visualmente */
+  box-shadow: 1px 1px 0 #000, 2px 2px 0 #555;
+}
+
+.anterior, .proximo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.anterior {
+  left: 10px;
+}
+
+.proximo {
+  right: 10px;
+}
+
+#pag2{
+    width: auto;
+    height: 670px;
+    background-color: #a48aa0;
+    padding: 4cap;
+    
+}
+#pag2 p{
+    width: 400px;
+    padding: auto;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+.container-pag2{
+    width: 400px;
+    height: 408px;
+    background-color: #e7a6d4;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.container-pag2{
+    width: 97vw;
+    height: 43vh;
+    background-image:url(../img/computer-screens-running-programming-code-empty-software-developing-agency-office-computers-parsing-data-algorithms-background-neural-network-servers-cloud-computing-data-room.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* border: 1px solid #2d0052; */
+    background-color: #ffffff70;
+    opacity:0.6;
+    
+}
+
+#pag3{
+    width: auto;
+    height: 600px;
+    background-color: #ebdce9;
+    padding: 50px;
+}
+#pag3 p{
+    width: 400px;
+    padding: auto;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+#pag4{
+    width: auto;
+    height: 470px;
+    background-color: #a100ff;
+    padding: 110px;
+}
+#pag4 p{
+    width: 1300px;
+    padding: auto;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+}
+
